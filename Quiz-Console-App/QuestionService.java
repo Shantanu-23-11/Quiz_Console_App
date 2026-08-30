@@ -20,19 +20,20 @@ public class QuestionService {
         for (Question q : questions) {
             System.out.println("Question no. : " + q.getId());
             System.out.println(q.getQuestion());
-            System.out.println(q.getOpt1());
-            System.out.println(q.getOpt2());
-            System.out.println(q.getOpt3());
-            System.out.println(q.getOpt4());
+            System.out.print(q.getOpt1() + " ");
+            System.out.print(q.getOpt2() + " ");
+            System.out.print(q.getOpt3() + " ");
+            System.out.print(q.getOpt4() + " ");
+            System.out.println();
             Scanner sc = new Scanner(System.in);
             selection[i] = sc.nextLine();
             i++;
 
         }
 
-        for (String s : selection) {
-            System.out.println(s);
-        }
+        // for (String s : selection) {
+        //     System.out.println(s);
+        // }
 
     }
 
